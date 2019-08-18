@@ -169,7 +169,7 @@
         <!--Lista de Senhas-->
         <scene sceneID="eXt-B0-Dbi">
             <objects>
-                <viewController id="t6F-qz-gBh" sceneMemberID="viewController">
+                <viewController id="t6F-qz-gBh" customClass="PasswordsViewController" customModule="SuperSenha" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qth-fB-vcN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -192,6 +192,9 @@
                                 <state key="normal" title="Gerar Novamente">
                                     <color key="titleColor" red="0.59607843140000005" green="0.14117647059999999" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="generate:" destination="t6F-qz-gBh" eventType="touchUpInside" id="8Yh-6V-3E5"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="9999999" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="l2b-OL-U3L">
                                 <rect key="frame" x="16" y="138" width="343" height="401"/>
@@ -216,15 +219,18 @@
                         <viewLayoutGuide key="safeArea" id="7Cy-kL-u4S"/>
                     </view>
                     <navigationItem key="navigationItem" title="Lista de Senhas" id="e0M-7u-qlz"/>
+                    <connections>
+                        <outlet property="tvPasswords" destination="l2b-OL-U3L" id="26O-Th-yph"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uZb-ng-9H2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1674" y="771"/>
         </scene>
-        <!--View Controller-->
+        <!--Security Tips View Controller-->
         <scene sceneID="HL9-oR-NBM">
             <objects>
-                <viewController id="8vO-cn-K9k" sceneMemberID="viewController">
+                <viewController id="8vO-cn-K9k" customClass="SecurityTipsViewController" customModule="SuperSenha" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nl9-kM-Dxw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -240,6 +246,9 @@
                                 <state key="normal" title="Fechar">
                                     <color key="titleColor" red="0.59607843140000005" green="0.14117647059999999" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="close:" destination="8vO-cn-K9k" eventType="touchUpInside" id="Mhd-Ai-nZv"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ud3-c9-u4f">
                                 <rect key="frame" x="24" y="94" width="327" height="463"/>
