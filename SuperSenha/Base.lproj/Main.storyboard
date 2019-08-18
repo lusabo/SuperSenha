@@ -153,6 +153,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Gerador de Senhas" id="xs9-nY-0Ta"/>
+                    <connections>
+                        <outlet property="swCapitalLetters" destination="01b-ve-no7" id="m4q-Ka-Tl9"/>
+                        <outlet property="swLetters" destination="0t4-vf-8VQ" id="sOt-ht-BmZ"/>
+                        <outlet property="swNumbers" destination="tyG-DF-xrT" id="Wc6-Co-7xg"/>
+                        <outlet property="swSpecialCharacters" destination="6t2-BY-Pn5" id="rhh-q3-wvf"/>
+                        <outlet property="tfNumberOfCharacters" destination="yjI-uV-Ige" id="NzF-YR-OFq"/>
+                        <outlet property="tfTotalPasswords" destination="9Dx-vS-NRs" id="8K9-3M-zHl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
